@@ -1,9 +1,15 @@
+"use client";
 import { Avatar } from "@/components/ui/avatar";
 import { FaCoins } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function Reward() {
+  const router = useRouter();
   return (
-    <div className="flex justify-between items-center px-2 py-4 border rounded-lg">
+    <div
+      onClick={() => router.push("redeem")}
+      className="flex justify-between items-center px-2 py-4 border rounded-lg"
+    >
       <div className="flex gap-2 items-center">
         <Avatar>
           <img
