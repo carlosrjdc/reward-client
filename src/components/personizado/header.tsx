@@ -16,7 +16,7 @@ export function HeaderMenu() {
         <strong className="text-primary">SISTEMA FIDELIDADE</strong>
       </div>
       <div className="flex justify-between gap-4 items-center">
-        <span className="text-primary">Entrar</span>
+        <span onClick={()=>router.push('/login')} className="text-primary">Entrar</span>
         {theme === "dark" ? (
           <CiLight onClick={() => setTheme("light")} size={25} />
         ) : (
