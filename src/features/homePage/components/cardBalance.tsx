@@ -10,7 +10,7 @@ export default function CardBalance() {
 
   return (
     <div className="flex justify-center mt-2">
-      <Card className="w-full h-56">
+      <Card className="w-full h-56 ">
         {stateQrCode ? (
           <CardContent className="flex flex-col justify-between h-full">
             <div className="flex items-center justify-between mt-4">
@@ -36,9 +36,9 @@ export default function CardBalance() {
             </div>
           </CardContent>
         ) : (
-          <CardContent className="flex mt-4 items-center gap-4 h-full">
+          <CardContent className="flex p-1 items-center gap-2 h-full">
             <QRCodeCanvas
-              size={140}
+              size={180}
               onClick={() => setStateQrCode(true)}
               value="654521-655521-1998721"
             />
