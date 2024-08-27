@@ -7,7 +7,7 @@ export default function Reward() {
   const router = useRouter();
   return (
     <div
-      onClick={() => router.push("redeem")}
+      onClick={() => router.push("/redeem")}
       className="flex justify-between items-center px-2 py-4 border rounded-lg"
     >
       <div className="flex gap-2 items-center">
