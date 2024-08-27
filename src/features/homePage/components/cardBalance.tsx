@@ -38,7 +38,7 @@ export default function CardBalance() {
         ) : (
           <CardContent className="flex mt-4 items-center gap-4 h-full">
             <QRCodeCanvas
-              size={190}
+              size={140}
               onClick={() => setStateQrCode(true)}
               value="654521-655521-1998721"
             />
