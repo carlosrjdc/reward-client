@@ -17,7 +17,7 @@ const StepperIndicator = ({ activeStep }: StepperIndicatorProps) => {
             <div className="flex justify-between">
               <div>
                 <div className="flex gap-2">
-                  <h3 className="font-medium leading-tight">Compra</h3>
+                  <h3 className="font-bold leading-tight">Compra</h3>
                   <span className="text-[10px] font-bold p-0.5 rounded bg-yellow-500/50">R$20,00</span>
                 </div>
                 <p className="text-sm">+500 pontos</p>
