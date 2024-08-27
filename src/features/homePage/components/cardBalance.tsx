@@ -38,12 +38,11 @@ export default function CardBalance() {
         ) : (
           <CardContent className="flex mt-4 items-center gap-4 h-full">
             <QRCodeCanvas
-            
               size={140}
               onClick={() => setStateQrCode(true)}
               value="654521-655521-1998721"
             />
-            <div className="flex flex-col justify-between items-start p-2">
+            <div className="flex h-full py-4 flex-col justify-between items-start p-2">
               <div className="flex flex-col">
                 <strong className="font-bold text-xl">Carlos Rosa</strong>
                 <div className="flex gap-2 items-center">
