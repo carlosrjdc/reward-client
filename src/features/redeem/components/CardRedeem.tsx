@@ -21,7 +21,7 @@ export default function CardRedeem() {
               Torne o seu aniversário inesquecível em nosso estabelecimento
             </span>
             <div className="p-1">
-              <span className="text-[10px] py-0.5 px-1 bg-green-200">
+              <span className="text-[10px] text-primary py-1 px-2 bg-secondary rounded-lg">
                 Você tem 12.340 pontos
               </span>
             </div>
