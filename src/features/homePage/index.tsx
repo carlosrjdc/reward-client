@@ -3,6 +3,7 @@ import CardBalance from "./components/cardBalance";
 import Reward from "./components/reward";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabsContent } from "@radix-ui/react-tabs";
+import StepperIndicator from "./components/steps";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
             <Reward />
             <Reward />
             <Reward />
+          </TabsContent>
+          <TabsContent className="mt-2 flex" value="two">
+            <StepperIndicator activeStep={3}  />
           </TabsContent>
         </Tabs>
       </div>
