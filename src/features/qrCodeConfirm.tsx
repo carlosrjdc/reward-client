@@ -10,7 +10,7 @@ export default function QrCodeConfirm() {
   return (
     <div>
       <HeaderMenu />
-      <div className="w-full text-slate-900 justify-center items-center flex flex-col gap-2 max-w-xl mx-auto px-4">
+      <div className="w-full justify-center items-center flex flex-col gap-2 max-w-xl mx-auto px-4">
         <Alert className="my-2 bg-blue-100">
           <BsExclamationOctagonFill size={25} className="fill-blue-500" />
           <AlertTitle className="text-blue-800 ml-1">Heads up!</AlertTitle>
