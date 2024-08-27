@@ -4,6 +4,7 @@ import Reward from "./components/reward";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabsContent } from "@radix-ui/react-tabs";
 import StepperIndicator from "./components/steps";
+import Rules from "./components/rules";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
           </TabsContent>
           <TabsContent className="mt-2 flex" value="two">
             <StepperIndicator activeStep={3}  />
+          </TabsContent>
+          <TabsContent value="three">
+            <Rules/>
           </TabsContent>
         </Tabs>
       </div>
