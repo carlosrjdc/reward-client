@@ -12,7 +12,7 @@ export default function CardBalance() {
     <div className="flex justify-center mt-2">
       <Card className="w-full h-56 ">
         {stateQrCode ? (
-          <CardContent className="flex flex-col justify-between h-full">
+          <CardContent onClick={() => setStateQrCode(false)} className="flex flex-col justify-between h-full">
             <div className="flex items-center justify-between mt-4">
               <div className="flex flex-col">
                 <span>Programa Fidelidade</span>
@@ -29,17 +29,17 @@ export default function CardBalance() {
               </div>
               <div className="flex gap-2">
                 <IoQrCodeSharp
-                  onClick={() => setStateQrCode(false)}
+                  
                   size={80}
                 />
               </div>
             </div>
           </CardContent>
         ) : (
-          <CardContent className="flex p-1 items-center gap-2 h-full">
+          <CardContent onClick={() => setStateQrCode(true)} className="flex p-1 items-center gap-2 h-full">
             <QRCodeCanvas
               size={180}
-              onClick={() => setStateQrCode(true)}
+              
               value="654521-655521-1998721"
             />
             <div className="flex h-full py-4 flex-col justify-between items-start p-2">
