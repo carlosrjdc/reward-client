@@ -15,12 +15,12 @@ export default function QrCodeConfirm() {
           <BsExclamationOctagonFill size={25} className="fill-blue-500" />
           <AlertTitle className="text-blue-800 ml-1">Mostre este código QR a um funcionário!</AlertTitle>
           <AlertDescription className="ml-1 text-blue-800">
-          Você tem 69.820 pontos. Após recuperar esta recompensa, você terá 67.320 pontos restantes.
+            Você tem 69.820 pontos. Após recuperar esta recompensa, você terá 67.320 pontos restantes.
           </AlertDescription>
         </Alert>
         <QRCodeCanvas size={350} value="carlos roberto rosa da Silva" />
         <div className=" mt-4 w-full">
-          <Reward />
+          <Reward content="Corte de cabelo barbearia do zé" name="Corte Cabelo" points={120} />
         </div>
       </div>
     </div>

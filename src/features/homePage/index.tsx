@@ -19,9 +19,9 @@ export default function Home() {
             <TabsTrigger value="three">Regras</TabsTrigger>
           </TabsList>
           <TabsContent className="mt-2 flex flex-col gap-1" value="reward">
-            <Reward />
-            <Reward />
-            <Reward />
+            <Reward content="Corte de cabelo barbearia do zé" name="Corte Cabelo" points={120}  />
+            <Reward content="Servico de BarbaTerapia" name="BarbaTerapia" points={230} />
+            <Reward content="servico de sombracelha masculina" name="Sombracelha masculina" points={18} />
           </TabsContent>
           <TabsContent className="mt-2 flex" value="two">
             <StepperIndicator activeStep={3}  />

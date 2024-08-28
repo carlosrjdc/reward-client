@@ -3,7 +3,13 @@ import { Avatar } from "@/components/ui/avatar";
 import { FaCoins } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
-export default function Reward() {
+type props = {
+  name: string;
+  points: number;
+  content: string;
+}
+
+export default function Reward({content, name, points}:props) {
   const router = useRouter();
   return (
     <div
@@ -18,12 +24,12 @@ export default function Reward() {
           />
         </Avatar>
         <div className="flex flex-col gap-0.5">
-          <strong>Corte de Cabelo</strong>
-          <span>Barbearia do Zé</span>
+          <strong>{name}</strong>
+          <span>{content}</span>
         </div>
       </div>
       <div className="flex gap-2">
-        <strong>800</strong>
+        <strong>{points}</strong>
         <FaCoins />
       </div>
     </div>

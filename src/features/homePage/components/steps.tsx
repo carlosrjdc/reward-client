@@ -1,5 +1,5 @@
 import { FaCoins } from "react-icons/fa";
-import React, { Fragment } from "react";
+import React from "react";
 
 interface StepperIndicatorProps {
   activeStep: number;
